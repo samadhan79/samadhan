@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: white;
+}
+
+.white {
+    color: var(--primary)
+}
+
+
+body {
+    background-color: black;
+
+}
+
+.container {
+    background-color: black;
+
+
+}
+
+.row {
+    display: flex;
+}
+
+.col-2 {
+    width: 8.88%;
+
+}
+
+.col-10 {
+    width: 88%;
+
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 100%;
+    background-color: gray;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    margin: 10px;
+
+
+}
+
+.nav a i {
+    font-size: 36px;
+}
+
+.home {
+    text-align: center;
+    margin: auto;
+    height: 100%;
+}
+
+.home h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home h1 span {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 40px;
+}
+
+.home p {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.about h2 {
+    color: #f1f1f1;
+    margin: 10px 0;
+}
+
+.about p {
+    letter-spacing: 4px;
+    color: gray;
+    margin: 10px 0;
+    width: 70%;
+
+}
+
+.about hr {
+    width: 100px;
+}
+
+.content {
+    padding: 30px;
+    height: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+
+input{
+    padding: 16px;
+    width: 100%;
+}

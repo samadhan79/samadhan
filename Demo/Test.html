@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            padding-left: 1ch;
+        }
+
+        .count li::marker {
+            content: '[' counter(list-item)']';
+            font-weight: bold;
+            color: crimson;
+        }
+        .mark li{
+            list-style-type:"✓";
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="count">
+        <li>Bread</li>
+        <li>Milt</li>
+        <li>Apples</li>
+        <li>Graphs</li>
+        <li>Wine</li>
+    </ul>
+    <ul class="mark">
+        <li>Bread</li>
+        <li>Milt</li>
+        <li>Apples</li>
+        <li>Graphs</li>
+        <li>Wine</li>
+    </ul>
+</body>
+
+</html>

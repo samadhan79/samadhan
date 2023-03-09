@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: gray;
+}
+
+.parallel {
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://mobirise.com/extensions/pizzam5/pizza/assets/images/img6-1.jpg);
+    z-index: 1;
+
+}
+
+.font-family {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-white {
+    color: white;
+}
+
+.mlr {
+    margin: 12px 0px;
+}
+
+.parallel::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.content {
+    width: 1024px;
+    margin: auto;
+
+}
+
+.color-text{
+    color: #a68462 ;
+}
+
+.parallel h1 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15rem;
+    line-height: 0.85;
+    font-style: normal;
+    color: white;
+    text-indent: -0.07em;
+}
+
+
+.row {
+    display: flex;
+
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-spacebetween {
+    justify-content: space-between;
+}
+
+.justify-content-start {
+    justify-content: start;
+
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+.col-6 {
+    width: 50%;
+
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.align-content-ceter {
+    align-content: center;
+
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+
+.content-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+
+.content-heading {
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+}
+
+.content-heading a {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+
+
+
+}
+
+.subtitle {
+    margin: 10px;
+    width: 45%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.parallel2 {
+    background-image: url(https://mobirise.com/extensions/pizzam5/pizza/assets/images/img4-1.jpg);
+}
+
+.parallel3 {
+    background-image: url(https://mobirise.com/extensions/pizzam5/pizza/assets/images/img2-1.jpg);
+}
+
+.buffer {
+    background-color: gray;
+    min-height: 60vh;
+}
+
+.buffer h3 {
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3.8rem;
+    line-height: 1.1;
+    font-style: normal;
+    color: #eeeeee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+
+    background: #414142;
+    padding: 10px;
+    box-shadow: 0px 10px 10px;
+    min-height: 100px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 36px;
+    color: #eeeeee;
+    margin: 10px;
+    text-decoration: none;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    align-content: center;
+
+}
+
+.logo img {
+    height: 36px;
+    margin: 0px 15px;
+}
+
+.logo h1 {
+    color: white;
+    font-weight: 500px;
+    font-size: 2.5rem;
+}
+
+.logo i {
+    color: #a68462;
+    white-space: normal;
+}
+
+.image-container img {
+    max-height: 480px;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pizz-image {
+    display: flex;
+    justify-content: center;
+
+    padding: 20px 20px;
+}
+
+
+.pizz-image img {
+    width: 90px;
+    padding: 0px 20px;
+    animation: 5s linear infinite running rotate360;
+
+}
+
+.pizz-image p {
+    width: 50%;
+}
+
+hr {
+    text-align: center;
+    width: 50%;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
