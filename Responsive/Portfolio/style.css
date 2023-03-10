@@ -1,114 +1,255 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-:root {
-    --primary: white;
+html{
+    scroll-behavior: smooth;
 }
-
-.white {
-    color: var(--primary)
-}
-
-
-body {
-    background-color: black;
-
-}
-
-.container {
-    background-color: black;
-
-
-}
-
 .row {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
 }
 
 .col-2 {
-    width: 8.88%;
+    width: 16.66%;
 
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
 }
 
 .col-10 {
-    width: 88%;
+    width: 83.33%;
 
 }
 
-.nav {
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.align-item {
+    align-items: baseline;
+}
+
+header {
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 15px;
+    background-color: #040b14;
+    overflow-y: auto;
+    width: 300px;
+    z-index: 1;
+    margin-right: 20px;
+    
+}
+
+.profile img {
+    display: block;
+    margin: 15px auto;
     width: 120px;
-    height: 100%;
-    background-color: gray;
-    text-align: center;
-}
-
-.nav a {
-    color: white;
-    margin: 10px;
-
+    border: 1px solid black;
 
 }
 
-.nav a i {
-    font-size: 36px;
+.rounded-circle {
+    border-radius: 50%;
 }
 
-.home {
-    text-align: center;
-    margin: auto;
-    height: 100%;
+.img-fluide {
+    width: 100%;
+    height: auto;
 }
 
-.home h1 {
-    text-align: center;
-    margin-top: 20px;
+.navbar {
+    padding: 30px 0;
 }
 
-.home h1 span {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-
-    font-size: 40px;
+.navbar ul li {
+    list-style: none;
 }
 
-.home p {
-    color: white;
-    text-align: center;
-    margin: 10px;
-}
-
-
-.about h2 {
-    color: #f1f1f1;
-    margin: 10px 0;
-}
-
-.about p {
-    letter-spacing: 4px;
+.navbar ul li a {
+    display: flex;
     color: gray;
-    margin: 10px 0;
-    width: 70%;
+    text-decoration: none;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.navbar ul li a i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.main {
+    background-color: #f5f8fd;
+    width: 98%;
+    margin-left: 25px;
+}
+
+.section-title {
+    padding-bottom: 30px;
 
 }
 
-.about hr {
-    width: 100px;
+.section-title h1 {
+    border-bottom: 3px solid blue;
+    width: 5%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .content {
-    padding: 30px;
-    height: 100%;
-    max-width: 980px;
-    margin: auto;
+
+    padding: 50px;
 }
 
-input{
-    padding: 16px;
+.home {
+    height: 100vh;
     width: 100%;
+    background-image: url('https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg');
+    background-size: cover;
+}
+
+.home-container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-container p {
+
+    font-size: 70px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+.home-container p span {
+    color: white;
+}
+
+.about {
+    height: 100vh;
+}
+
+.about img {
+    padding-right: 50px;
+}
+
+.about h3 {
+    color: #173b6c;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.about p {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+.about ul {
+    list-style: none;
+}
+
+.about ul strong {
+    margin-right: 10px;
+}
+
+.about ul li {
+    margin-bottom: 20px;
+}
+
+.contact {
+    height: 100vh;
+}
+
+.resume {
+    height: 100vh;
+}
+
+.resume-item {
+    margin-top: -2px;
+    border-left: 1px solid #1f5297;
+    position: relative;
+    padding: 0 0 20px 20px;
+
+
+}
+
+.resume-item ul {
+    padding-left: 30px;
+    margin-bottom: 1rem;
+}
+
+.resume-item p {
+    padding-bottom: 30px;
+
+}
+
+.resume-item h4 {
+    margin-bottom: 30px;
+
+}
+
+.resume-item ul li {
+
+    padding-bottom: 30px;
+
+}
+
+.resume-item::before {
+    content: "";
+    border: 2px solid #1f5297;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.resume-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
 }
