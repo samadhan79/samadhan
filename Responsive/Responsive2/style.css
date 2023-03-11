@@ -4,101 +4,64 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .row {
     display: flex;
-    flex-wrap: wrap;
+
 }
 
-.col-1 {
-    width: 8.33%;
-}
 
 .col-2 {
     width: 16.66%;
-
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-
-}
-
-.col-5 {
-    width: 41.66%;
+    padding: 10px;
 }
 
 .col-6 {
     width: 50%;
+    padding: 10px;
 }
 
-.col-7 {
-    width: 58.33%;
+.col-4 {
+    width: 33.33%;
+    padding: 10px;
 }
 
 .col-8 {
     width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
+    padding: 10px;
 }
 
 .col-10 {
     width: 83.33%;
-
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-.align-item {
-    align-items: baseline;
+    padding: 10px;
 }
 
 header {
-
+    background-color: black;
     position: fixed;
     top: 0;
-    left: 0;
     bottom: 0;
-    padding: 0 15px;
-    background-color: #040b14;
-    /* overflow-y: auto; */
-    width: 300px;
-    z-index: 1;
-    margin-right: 20px;
+    left: 0;
+    right: 0;
+    width: 16%;
 
-}
 
-.profile img {
-    display: block;
-    margin: 15px auto;
-    width: 120px;
-    border: 1px solid black;
-
-}
-
-.rounded-circle {
-    border-radius: 50%;
 }
 
 .img-fluide {
     width: 100%;
-    height: auto;
 }
+
+.profile img {
+    padding: 10px 0 0 10px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
 
 .navbar {
 
@@ -124,53 +87,72 @@ header {
     font-size: 20px;
 }
 
+
+
+
+
+
+.nav ul li {
+
+    list-style: none;
+    padding: 20px 0 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    line-height: 10px;
+}
+
 .main {
     position: relative;
-    background-color: #f5f8fd;
-    width: 98%;
-    margin-left: 25px;
 }
 
-.section-title {
-    padding-bottom: 30px;
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    z-index: 1;
+    display: none;
+}
+
+.icon button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: red;
+    color: wheat;
 
 }
 
-.section-title h1 {
-    border-bottom: 3px solid blue;
-    width: 5%;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.content {
-
-    padding: 50px;
-}
 
 .home {
-    height: 100vh;
+
+
     width: 100%;
-    background-image: url('https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg');
-    background-size: cover;
+    height: 100vh;
 }
 
 .home-container {
     position: relative;
-    z-index: 2;
+}
+
+.home-container img {
+    width: 100%;
+    height: auto;
 }
 
 .home-container p {
-
-    font-size: 70px;
     position: absolute;
-    top: 300px;
-    left: 300px;
+    top: 250px;
+    left: 250px;
+    color: white;
+    font-size: 50px;
+
 }
 
-.home-container p span {
-    color: white;
-}
+
+
 
 .about {
     height: 100vh;
@@ -203,9 +185,6 @@ header {
     margin-bottom: 20px;
 }
 
-.contact {
-    height: 100vh;
-}
 
 .resume {
     height: 100vh;
@@ -259,21 +238,25 @@ header {
     margin-left: 15px;
 }
 
+@media (max-width:786px) {
 
 
-.icon {
-    position: fixed;
-    right: 20px;
-    top: 10px;
-    z-index: 1;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    background-color: skyblue;
-    padding: 10px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    header {
+        display: none;
+
+    }
+
+    .icon {
+        display: block;
+    }
+
+
+    .col-2 {
+        width: 0;
+    }
+
+    .main {
+        width: 100%;
+    }
+
 }
-
